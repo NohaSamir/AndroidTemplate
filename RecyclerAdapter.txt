@@ -50,12 +50,16 @@ class ${NAME}(private val interaction: Interaction? = null) :
   }
 
   fun submitList(list: List<${Model_Class}>){
-  //For pagination
-  /*val newList = mutableListOf<Movie>()
+
+      differ.submitList(list)
+  }
+
+  fun addItems(list: List<${Model_Class}>){
+ 
+    val newList = mutableListOf<${Model_Class}>()
         newList.addAll(differ.currentList)
         newList.addAll(list)
-        differ.submitList(newList)*/
-      differ.submitList(list)
+        differ.submitList(newList)
   }
 
   class ${ViewHolder_Class}
